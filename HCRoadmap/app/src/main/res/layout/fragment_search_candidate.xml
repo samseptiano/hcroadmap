@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.SearchCandidateFragment">
+
+    <LinearLayout
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnFilterSearchCandidate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btnFilter"
+                android:layout_width="75dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_purple_border"
+                android:text="Filter"
+                android:src="@drawable/filter_icon"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                android:textSize="11sp"
+                android:layout_height="40dp"/>
+
+            <EditText
+                android:id="@+id/edtSearchName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="12sp"
+                android:background="@drawable/shape_purple_border"
+                android:inputType="text"
+                android:hint="cari nama..." />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnSearchCandidate"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/lnHeader"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMapping"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnSearchCandidateBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnCompare"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/shapepurple"
+            android:text="Compare Talent"
+            android:textSize="11sp"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/btnStruktur"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/shapepurple"
+            android:text="Struktur Organisasi"
+            android:textSize="11sp"
+            android:layout_height="40dp"/>
+        <ImageButton
+            android:layout_width="60dp"
+            android:id="@+id/imgTalentMapping"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/shapepurple"
+            android:src="@drawable/ic_person_black_24dp"></ImageButton>
+    </LinearLayout>
+</RelativeLayout>

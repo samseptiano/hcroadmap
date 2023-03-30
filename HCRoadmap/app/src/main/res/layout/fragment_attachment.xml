@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Fragment.TalentMapping.SubTalentProfile.AttachmentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/btnAddAttachment"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:layout_gravity="right"
+        android:textColor="@color/white"
+        android:background="@drawable/shapepurple"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Add Attachment" />
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvAttachment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

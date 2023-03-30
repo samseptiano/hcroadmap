@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#05C5B1</color>
+    <color name="colorPrimaryDark">#00897B</color>
+    <color name="colorAccent">#00FFE5</color>
+    <color name="signupColor">#037E71</color>
+    <color name="white">#ffffff</color>
+    <color name="greenPastel">#A7EAD6</color>
+    <color name="pinkPastel">#FFB8D2</color>
+
+    <!--<color name="colorPrimary">#a00000</color>-->
+    <!--<color name="colorPrimaryDark">#870000</color>-->
+    <!--<color name="colorAccent">#ff6a00</color>-->
+    <!--<color name="signupColor">#870000</color>-->
+    <!--<color name="white">#ffffff</color>-->
+
+    <color name="black_overlay">#66000000</color>
+    <color name="dark_grey">#444444</color>
+    <color name="placeholder_grey">#3C3F41</color>
+
+    <color name="green">#00db00</color>
+    <color name="darkGreen">#038503</color>
+    <color name="blue">#005bdb</color>
+    <color name="yellow">#d7db00</color>
+    <color name="orange">#db7100</color>
+    <color name="red">#db0000</color>
+
+    <color name="EditTextColor">#2db8a3</color>
+    <color name="IconLogin">#057776</color>
+    <color name="black">#000000</color>
+    <color name="light_grey">#595D5F</color>
+    <color name="light_grey2">#BEBEBE</color>
+    <color name="transparent">#00FFFFFF</color>
+
+</resources>

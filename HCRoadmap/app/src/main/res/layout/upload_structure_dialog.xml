@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:apps="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/imgFileType"
+                android:layout_width="50dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/imgalt" />
+            <TextView
+                android:id="@+id/tvFilename"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="file://"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:textSize="10dp"
+                android:textStyle="italic"
+                />
+            <Button
+                android:id="@+id/btnChooseFile"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:textSize="10sp"
+
+                android:background="@drawable/shape_purple_border"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Choose File" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="10sp"
+                    android:background="@drawable/button_shape_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Cancel" />
+                <Button
+                    android:id="@+id/btnUpload"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/shapepurple"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Upload" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

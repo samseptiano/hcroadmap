@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.TalentMapping.TalentmappingFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/lnFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinnerCompany"
+            app:smsp_hint="Company"
+            app:smsp_isSearchable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            app:smsp_errorText=""
+            app:smsp_hintSize="10sp"
+            app:smsp_itemSize="10sp"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Floating Label Text"
+            app:smsp_hintColor="@color/colorPrimary"
+            app:smsp_itemColor="@color/colorPrimary"
+            app:smsp_itemListColor="@color/colorPrimary"
+            app:smsp_itemListHintBackgroundColor="@color/light_grey"
+            app:smsp_itemListHintColor="@color/white"
+            app:smsp_multilineError="false"
+            app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+            app:smsp_selectedItemListColor="@color/light_grey" />
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spinnerPosition"
+                app:smsp_hint="Target Posisi"
+                app:smsp_isSearchable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                app:smsp_errorText=""
+                app:smsp_hintSize="10sp"
+                app:smsp_itemSize="10sp"
+                app:smsp_enableErrorLabel="false"
+                app:smsp_enableFloatingLabel="false"
+                app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+                app:smsp_floatingLabelText="Floating Label Text"
+                app:smsp_hintColor="@color/colorPrimary"
+                app:smsp_itemColor="@color/colorPrimary"
+                app:smsp_itemListColor="@color/colorPrimary"
+                app:smsp_itemListHintBackgroundColor="@color/light_grey"
+                app:smsp_itemListHintColor="@color/white"
+                app:smsp_multilineError="false"
+                app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+                app:smsp_selectedItemListColor="@color/light_grey" />
+
+            <mabbas007.tagsedittext.TagsEditText
+                android:id="@+id/tagsDirektorat"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:allowSpaceInTag="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:hint="Direktorat"
+                android:textSize="12dp"
+                app:tagsTextColor="#000"
+                app:tagsTextSize="12dp"
+                android:background="@drawable/btn_modal_grey"
+                app:tagsBackground="@drawable/square_default"
+                app:tagsCloseImageRight="@drawable/close_btn"/>
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinnerStatus"
+            app:smsp_hint="Status"
+            app:smsp_isSearchable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            app:smsp_errorText=""
+            app:smsp_hintSize="10sp"
+            app:smsp_itemSize="10sp"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Floating Label Text"
+            app:smsp_hintColor="@color/colorPrimary"
+            app:smsp_itemColor="@color/colorPrimary"
+            app:smsp_itemListColor="@color/colorPrimary"
+            app:smsp_itemListHintBackgroundColor="@color/light_grey"
+            app:smsp_itemListHintColor="@color/white"
+            app:smsp_multilineError="false"
+            app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+            app:smsp_selectedItemListColor="@color/light_grey"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:background="@drawable/shapepurple"
+                android:layout_margin="8dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Search" />
+            <Button
+                android:id="@+id/btnBuatReview"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_purple_border"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="40dp"
+                android:text="Buat Review" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/imgExpandFilter"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_height="10dp"
+            android:scaleType="center"
+            android:background="@drawable/expand_down" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTalentReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

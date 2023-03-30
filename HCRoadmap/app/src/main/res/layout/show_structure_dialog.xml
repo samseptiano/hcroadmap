@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinnerDirektorat"
+            app:smsp_hint="Direktorat"
+            app:smsp_isSearchable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            app:smsp_errorText=""
+            app:smsp_hintSize="10sp"
+            app:smsp_itemSize="10sp"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Floating Label Text"
+            app:smsp_hintColor="@color/colorPrimary"
+            app:smsp_itemColor="@color/colorPrimary"
+            app:smsp_itemListColor="@color/colorPrimary"
+            app:smsp_itemListHintBackgroundColor="@color/light_grey"
+            app:smsp_itemListHintColor="@color/white"
+            app:smsp_multilineError="false"
+            app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+            app:smsp_selectedItemListColor="@color/light_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnShow"
+            android:text="Show"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shapepurple"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+        <Button
+            android:id="@+id/btnCancel"
+            android:text="Cancel"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_purple_border"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

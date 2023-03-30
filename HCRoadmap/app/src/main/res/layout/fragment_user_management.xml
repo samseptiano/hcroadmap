@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.UserManagementFragment">
+    <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+        android:id="@+id/spinnerCompany"
+        app:smsp_hint="Company"
+        app:smsp_isSearchable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:smsp_errorText=""
+        app:smsp_hintSize="10sp"
+        app:smsp_itemSize="10sp"
+        app:smsp_enableErrorLabel="false"
+        app:smsp_enableFloatingLabel="false"
+        app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+        app:smsp_floatingLabelText="Floating Label Text"
+        app:smsp_hintColor="@color/colorPrimary"
+        app:smsp_itemColor="@color/colorPrimary"
+        app:smsp_itemListColor="@color/colorPrimary"
+        app:smsp_itemListHintBackgroundColor="@color/light_grey"
+        app:smsp_itemListHintColor="@color/white"
+        app:smsp_multilineError="false"
+        app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+        app:smsp_selectedItemListColor="@color/light_grey" />
+    <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+        android:id="@+id/spinnerDirektorat"
+        app:smsp_hint="Direktorat Asal"
+        app:smsp_isSearchable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        app:smsp_errorText=""
+        app:smsp_hintSize="10sp"
+        app:smsp_itemSize="10sp"
+        app:smsp_enableErrorLabel="false"
+        app:smsp_enableFloatingLabel="false"
+        app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+        app:smsp_floatingLabelText="Floating Label Text"
+        app:smsp_hintColor="@color/colorPrimary"
+        app:smsp_itemColor="@color/colorPrimary"
+        app:smsp_itemListColor="@color/colorPrimary"
+        app:smsp_itemListHintBackgroundColor="@color/light_grey"
+        app:smsp_itemListHintColor="@color/white"
+        app:smsp_multilineError="false"
+        app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+        app:smsp_selectedItemListColor="@color/light_grey" />
+    <Button
+        android:id="@+id/btnTambahPrivilege"
+        android:background="@drawable/shapepurple"
+        android:layout_width="wrap_content"
+        android:textSize="10sp"
+        android:layout_gravity="right"
+        android:textColor="@color/white"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:text="Tambah Privilege" />
+
+    <!--    <include layout="@layout/ldp_setting_item"></include>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUserManagement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

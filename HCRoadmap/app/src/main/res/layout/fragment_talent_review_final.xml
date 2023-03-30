@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.TalentReview.TalentReviewFinal">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/lnFilterArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spinnerCompany"
+                app:smsp_hint="Company"
+                app:smsp_isSearchable="true"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                app:smsp_errorText=""
+                app:smsp_hintSize="10sp"
+                app:smsp_itemSize="10sp"
+                app:smsp_enableErrorLabel="false"
+                app:smsp_enableFloatingLabel="false"
+                app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+                app:smsp_floatingLabelText="Floating Label Text"
+                app:smsp_hintColor="@color/colorPrimary"
+                app:smsp_itemColor="@color/colorPrimary"
+                app:smsp_itemListColor="@color/colorPrimary"
+                app:smsp_itemListHintBackgroundColor="@color/light_grey"
+                app:smsp_itemListHintColor="@color/white"
+                app:smsp_multilineError="false"
+                app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+                app:smsp_selectedItemListColor="@color/light_grey" />
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spinnerPosition"
+                app:smsp_hint="Target Posisi"
+                app:smsp_isSearchable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                app:smsp_errorText=""
+                app:smsp_hintSize="10sp"
+                app:smsp_itemSize="10sp"
+                app:smsp_enableErrorLabel="false"
+                app:smsp_enableFloatingLabel="false"
+                app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+                app:smsp_floatingLabelText="Floating Label Text"
+                app:smsp_hintColor="@color/colorPrimary"
+                app:smsp_itemColor="@color/colorPrimary"
+                app:smsp_itemListColor="@color/colorPrimary"
+                app:smsp_itemListHintBackgroundColor="@color/light_grey"
+                app:smsp_itemListHintColor="@color/white"
+                app:smsp_multilineError="false"
+                android:visibility="gone"
+                app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+                app:smsp_selectedItemListColor="@color/light_grey" />
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spinnerDirektorat"
+                app:smsp_hint="Direktorat"
+                android:visibility="gone"
+                app:smsp_isSearchable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                app:smsp_errorText=""
+                app:smsp_hintSize="10sp"
+                app:smsp_itemSize="10sp"
+                app:smsp_enableErrorLabel="false"
+                app:smsp_enableFloatingLabel="false"
+                app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+                app:smsp_floatingLabelText="Floating Label Text"
+                app:smsp_hintColor="@color/colorPrimary"
+                app:smsp_itemColor="@color/colorPrimary"
+                app:smsp_itemListColor="@color/colorPrimary"
+                app:smsp_itemListHintBackgroundColor="@color/light_grey"
+                app:smsp_itemListHintColor="@color/white"
+                app:smsp_multilineError="false"
+                app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+                app:smsp_selectedItemListColor="@color/light_grey" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnFilterKandidat"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shapepurple"
+                    android:text="Filter"
+                    android:layout_margin="5dp"
+                    android:textSize="11sp"
+                    android:layout_height="40dp"/>
+                <Button
+                    android:id="@+id/btnCompare"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shapepurple"
+                    android:text="Compare"
+                    android:textSize="11sp"
+                    android:layout_height="40dp"/>
+                <Button
+                    android:id="@+id/btnStrukturFinal"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shapepurple"
+                    android:text="Struktur Organisasi"
+                    android:textSize="11sp"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shapepurple"
+                android:text="Save"
+                android:textSize="11sp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lnFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:outlineSpotShadowColor="@color/transparent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageButton
+                android:id="@+id/imgExpandFilter"
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/expand_down"
+                android:scaleType="center" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvkandidatFinal"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginBottom="15dp"
+                android:text="Kandidat Final Tahap 1" />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvKandidatFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginBottom="15dp"
+                android:text="Rekomendasi" />
+        </LinearLayout>
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinnerFilterRekomendasi"
+            app:smsp_hint="All"
+            app:smsp_isSearchable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            app:smsp_errorText=""
+            app:smsp_hintSize="10sp"
+            app:smsp_itemSize="10sp"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Floating Label Text"
+            app:smsp_hintColor="@color/colorPrimary"
+            app:smsp_itemColor="@color/colorPrimary"
+            app:smsp_itemListColor="@color/colorPrimary"
+            app:smsp_itemListHintBackgroundColor="@color/light_grey"
+            app:smsp_itemListHintColor="@color/white"
+            app:smsp_multilineError="false"
+            app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+            app:smsp_selectedItemListColor="@color/light_grey" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRekomendasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

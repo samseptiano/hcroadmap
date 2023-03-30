@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:apps="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Add Custom Category"
+                android:textColor="#000"
+                android:layout_marginBottom="15dp"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:id="@+id/lnPosisiAwal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Nama Kategori"
+                    android:textColor="#000"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edtNamaKategori"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="12dp"
+                android:background="@drawable/btn_modal_grey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Tipe kategori"
+                    android:textColor="#000"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spinnerTipeKategory"
+                app:smsp_hint="Tipe"
+                app:smsp_isSearchable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                app:smsp_errorText=""
+                app:smsp_hintSize="10sp"
+                app:smsp_itemSize="10sp"
+                app:smsp_enableErrorLabel="false"
+                app:smsp_enableFloatingLabel="false"
+                app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+                app:smsp_floatingLabelText="Floating Label Text"
+                app:smsp_hintColor="@color/colorPrimary"
+                app:smsp_itemColor="@color/colorPrimary"
+                app:smsp_itemListColor="@color/colorPrimary"
+                app:smsp_itemListHintBackgroundColor="@color/light_grey"
+                app:smsp_itemListHintColor="@color/white"
+                app:smsp_multilineError="false"
+                app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+                app:smsp_selectedItemListColor="@color/light_grey" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                android:id="@+id/btnCancel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:textSize="12sp"
+                android:background="@drawable/shapetextarea"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Cancel" />
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shapepurple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Save" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

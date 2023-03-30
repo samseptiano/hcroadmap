@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Fragment.LDPMasterSettingFragment">
+
+    <Button
+        android:id="@+id/btnTambahLDP"
+        android:background="@drawable/shapepurple"
+        android:layout_width="wrap_content"
+        android:textSize="11sp"
+        android:layout_gravity="right"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Tambah LDP" />
+
+<!--    <include layout="@layout/ldp_setting_item"></include>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLDPSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

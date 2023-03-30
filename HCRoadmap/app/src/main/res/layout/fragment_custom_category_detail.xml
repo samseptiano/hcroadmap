@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.CustomCategoryDetailFragment">
+    <Button
+        android:id="@+id/btnAddCustomCategoryDetail"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"
+        android:textSize="10sp"
+        android:layout_height="40dp"
+        android:background="@drawable/shapepurple"
+        android:text="Tambah Detail" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rvCustomCategoryDetail"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

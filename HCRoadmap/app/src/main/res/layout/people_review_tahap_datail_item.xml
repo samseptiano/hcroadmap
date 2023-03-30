@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnTambahGroup"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_purple_border"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="10sp"
+        android:layout_height="30dp"
+        android:text="Tambah group" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardElevation="5dp"
+        android:layout_marginBottom="0dp"
+        android:paddingBottom="15dp"
+        card_view:cardCornerRadius="5dp"
+        android:paddingTop="5dp"
+        android:outlineSpotShadowColor="@color/black"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/lnTahapHeader"
+                android:background="@drawable/shapepurple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvTahap"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="Tahap 1"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnTahapArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--            <include layout="@layout/people_review_tahap_detail_sub_item"></include>-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvTalentReviewDetailTahapList"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

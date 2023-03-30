@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+    <Button
+        android:id="@+id/btnAssessmentResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="Assesment Result"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn360Feedback"
+        app:layout_constraintEnd_toStartOf="@+id/btnLearning"
+        app:layout_constraintStart_toEndOf="@+id/btnDataDiri"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDataDiri"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="Data Diri"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBgCheck"
+        app:layout_constraintEnd_toStartOf="@+id/btnAssessmentResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAttachment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="File Attachment"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnInovasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBgCheck" />
+
+    <Button
+        android:id="@+id/btnAward"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="Award"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOrgStructure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInovasi"
+        app:layout_constraintTop_toBottomOf="@+id/btnConstraint" />
+
+    <Button
+        android:id="@+id/btn360Feedback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="360 Feedback"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnInovasi"
+        app:layout_constraintEnd_toStartOf="@+id/btnConstraint"
+        app:layout_constraintStart_toEndOf="@+id/btnBgCheck"
+        app:layout_constraintTop_toBottomOf="@+id/btnAssessmentResult" />
+
+    <Button
+        android:id="@+id/btnPerformance"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="Performance"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnOrgStructure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInovasi" />
+
+    <Button
+        android:id="@+id/btnBgCheck"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="Background Check"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAttachment"
+        app:layout_constraintEnd_toStartOf="@+id/btn360Feedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOrgStructure"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="Organization Structure"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPerformance"
+        app:layout_constraintTop_toBottomOf="@+id/btnAward" />
+
+    <Button
+        android:id="@+id/btnInovasi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="Inovasi"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPerformance"
+        app:layout_constraintEnd_toStartOf="@+id/btnAward"
+        app:layout_constraintStart_toEndOf="@+id/btnAttachment"
+        app:layout_constraintTop_toBottomOf="@+id/btn360Feedback" />
+
+    <Button
+        android:id="@+id/btnConstraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="Constraint"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn360Feedback"
+        app:layout_constraintTop_toBottomOf="@+id/btnLearning" />
+
+    <Button
+        android:id="@+id/btnLearning"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/shape_purple_border"
+        android:text="Learning"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConstraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAssessmentResult"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

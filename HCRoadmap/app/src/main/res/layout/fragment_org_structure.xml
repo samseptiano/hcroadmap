@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.TalentMapping.SubTalentProfile.orgStructureFragment">
+    <LinearLayout
+        android:id="@+id/lnFilterArea"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinnerCompany"
+            app:smsp_hint="Company"
+            app:smsp_isSearchable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="0dp"
+            app:smsp_errorText=""
+            app:smsp_hintSize="10sp"
+            app:smsp_itemSize="10sp"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Floating Label Text"
+            app:smsp_hintColor="@color/colorPrimary"
+            app:smsp_itemColor="@color/colorPrimary"
+            app:smsp_itemListColor="@color/colorPrimary"
+            app:smsp_itemListHintBackgroundColor="@color/light_grey"
+            app:smsp_itemListHintColor="@color/white"
+            app:smsp_multilineError="false"
+            app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+            app:smsp_selectedItemListColor="@color/light_grey" />
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinnerDirektorat"
+            app:smsp_hint="Direktorat"
+            app:smsp_isSearchable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            app:smsp_errorText=""
+            app:smsp_hintSize="10sp"
+            app:smsp_itemSize="10sp"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Floating Label Text"
+            app:smsp_hintColor="@color/colorPrimary"
+            app:smsp_itemColor="@color/colorPrimary"
+            app:smsp_itemListColor="@color/colorPrimary"
+            app:smsp_itemListHintBackgroundColor="@color/light_grey"
+            app:smsp_itemListHintColor="@color/white"
+            app:smsp_multilineError="false"
+            app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+            app:smsp_selectedItemListColor="@color/light_grey" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnChange"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/shapepurple"
+                android:text="Change"
+                android:layout_margin="5dp"
+                android:textSize="11sp"
+                android:layout_height="40dp"/>
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shapepurple"
+                android:text="Delete"
+                android:textSize="11sp"
+                android:layout_height="40dp"/>
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shapepurple"
+                android:text="Upload"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imgFullScreen"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:layout_margin="0dp"
+        android:src="@drawable/imgalt" />
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_centerInParent = "true"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+    <WebView
+        android:id="@+id/webViewPDF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

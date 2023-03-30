@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:apps="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="50dp">
+
+                <ImageView
+                    android:id="@+id/imageZoom"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/filter_black_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Perusahaan"
+                    android:textColor="#000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spinnerPerusahaan"
+                app:smsp_hint="Company Awal"
+                app:smsp_isSearchable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                app:smsp_errorText=""
+                app:smsp_hintSize="10sp"
+                app:smsp_itemSize="10sp"
+                app:smsp_enableErrorLabel="false"
+                app:smsp_enableFloatingLabel="false"
+                app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+                app:smsp_floatingLabelText="Floating Label Text"
+                app:smsp_hintColor="@color/colorPrimary"
+                app:smsp_itemColor="@color/colorPrimary"
+                app:smsp_itemListColor="@color/colorPrimary"
+                app:smsp_itemListHintBackgroundColor="@color/light_grey"
+                app:smsp_itemListHintColor="@color/white"
+                app:smsp_multilineError="false"
+                app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+                app:smsp_selectedItemListColor="@color/light_grey"/>
+
+
+            <LinearLayout
+                android:id="@+id/lnPosisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Posisi"
+                    android:textColor="#000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <mabbas007.tagsedittext.TagsEditText
+                android:id="@+id/tagsPosisi"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:allowSpaceInTag="true"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="12dp"
+                app:tagsTextColor="#000"
+                app:tagsTextSize="12dp"
+                android:background="@drawable/btn_modal_grey"
+                app:tagsBackground="@drawable/square_default"
+                app:tagsCloseImageRight="@drawable/close_btn"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Direktorat"
+                    android:textColor="#000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spinnerDirektorat"
+                app:smsp_hint="Direktorat"
+                app:smsp_isSearchable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                app:smsp_errorText=""
+                app:smsp_hintSize="10sp"
+                app:smsp_itemSize="10sp"
+                app:smsp_enableErrorLabel="false"
+                app:smsp_enableFloatingLabel="false"
+                app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+                app:smsp_floatingLabelText="Floating Label Text"
+                app:smsp_hintColor="@color/colorPrimary"
+                app:smsp_itemColor="@color/colorPrimary"
+                app:smsp_itemListColor="@color/colorPrimary"
+                app:smsp_itemListHintBackgroundColor="@color/light_grey"
+                app:smsp_itemListHintColor="@color/white"
+                app:smsp_multilineError="false"
+                app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+                app:smsp_selectedItemListColor="@color/light_grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Golongan"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+            <mabbas007.tagsedittext.TagsEditText
+                android:id="@+id/tagsGolongan"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:allowSpaceInTag="true"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="10dp"
+                app:tagsTextColor="#000"
+                app:tagsTextSize="12dp"
+                android:background="@drawable/btn_modal_grey"
+                app:tagsBackground="@drawable/square_default"
+                app:tagsCloseImageRight="@drawable/close_btn"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:background="@drawable/shapeyellow"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:text="Reset" />
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:textSize="12sp"
+                android:background="@drawable/shapetextarea"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Cancel" />
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shapepurple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="OK" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

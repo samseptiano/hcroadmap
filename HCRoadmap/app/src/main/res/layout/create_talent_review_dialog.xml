@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:apps="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Nama Review"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="*"
+                android:textColor="@color/red"
+                android:textSize="18dp"
+                 />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtReviewName"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="12sp"
+                    android:maxLength="500"
+                    android:padding="5dp"
+                    android:background="@drawable/btn_modal_grey"
+                    android:inputType="text"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="Nama Perusahaan"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spinnerPerusahaan"
+                app:smsp_hint="Nama Perusahaan"
+                app:smsp_isSearchable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                app:smsp_errorText=""
+                app:smsp_hintSize="10sp"
+                app:smsp_itemSize="10sp"
+                app:smsp_enableErrorLabel="false"
+                app:smsp_enableFloatingLabel="false"
+                app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+                app:smsp_floatingLabelText="Floating Label Text"
+                app:smsp_hintColor="@color/colorPrimary"
+                app:smsp_itemColor="@color/colorPrimary"
+                app:smsp_itemListColor="@color/colorPrimary"
+                app:smsp_itemListHintBackgroundColor="@color/light_grey"
+                app:smsp_itemListHintColor="@color/white"
+                app:smsp_multilineError="false"
+                app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+                app:smsp_selectedItemListColor="@color/light_grey" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="target Posisi"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spinnerTargetPosisi"
+                app:smsp_hint="Target Posisi"
+                app:smsp_isSearchable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                app:smsp_errorText=""
+                app:smsp_hintSize="10sp"
+                app:smsp_itemSize="10sp"
+                app:smsp_enableErrorLabel="false"
+                app:smsp_enableFloatingLabel="false"
+                app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+                app:smsp_floatingLabelText="Floating Label Text"
+                app:smsp_hintColor="@color/colorPrimary"
+                app:smsp_itemColor="@color/colorPrimary"
+                app:smsp_itemListColor="@color/colorPrimary"
+                app:smsp_itemListHintBackgroundColor="@color/light_grey"
+                app:smsp_itemListHintColor="@color/white"
+                app:smsp_multilineError="false"
+                app:smsp_searchHeaderBackgroundColor="@color/colorPrimaryDark"
+                app:smsp_selectedItemListColor="@color/light_grey" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="Direktorat Asal"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+
+            <mabbas007.tagsedittext.TagsEditText
+                android:id="@+id/tagsDirektorat"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:allowSpaceInTag="true"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="12dp"
+                app:tagsTextColor="#000"
+                app:tagsTextSize="12dp"
+                android:background="@drawable/btn_modal_grey"
+                app:tagsBackground="@drawable/square_default"
+                app:tagsCloseImageRight="@drawable/close_btn"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape_red"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="Cancel" />
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/shapepurple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Save" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
